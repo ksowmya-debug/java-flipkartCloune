@@ -171,8 +171,8 @@ function Navbar() {
           {/* Actions */}
           <div className="flex items-center gap-1 sm:gap-2">
             {user ? (
-              <div className="hidden sm:flex items-center gap-3">
-                <div className="flex items-center gap-1 hover:bg-blue-50 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg transition group cursor-pointer">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="flex items-center gap-1 hover:bg-blue-50 px-2 py-1 rounded-lg transition cursor-pointer">
                   <User size={14} className="text-blue-600" />
                   <span className="font-medium text-blue-600 text-[11px] sm:text-[12px]">{user.name.split(' ')[0]}</span>
                 </div>
@@ -181,7 +181,7 @@ function Navbar() {
                 </button>
               </div>
             ) : (
-              <Link to="/login" className="hidden sm:flex items-center gap-1 hover:bg-blue-50 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-lg transition group">
+              <Link to="/login" className="flex items-center gap-1 hover:bg-blue-50 px-2 py-1 rounded-lg transition group">
                 <User size={14} className="text-gray-700 group-hover:text-blue-600" />
                 <span className="font-medium text-gray-800 group-hover:text-blue-600 text-[11px] sm:text-[12px]">Login</span>
                 <ChevronDown size={12} className="text-gray-500 group-hover:text-blue-600" />
