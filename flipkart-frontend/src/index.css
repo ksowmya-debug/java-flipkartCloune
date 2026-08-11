@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-flipkart: #2874F0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Hide scrollbar for horizontal scrolling containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
